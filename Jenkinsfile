@@ -85,7 +85,7 @@ pipeline {
            }
        }
        
-         stage ('Cleanup Artifacts') {
+         stage ('Cleanup Artifact') {
            steps {
                script {
                     sh "docker rmi ${IMAGE_NAME}:${IMAGE_TAG}"
